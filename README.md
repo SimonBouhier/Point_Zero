@@ -18,6 +18,16 @@
 Présenter P0 comme une fréquence pivot ayant des propriétés fractales et harmoniques.
 Expliquer que 963 Hz semble structurer certaines constantes fondamentales et pourrait être un attracteur caché.
 Lancer l’idée que P0 pourrait permettre une unification entre structures mathématiques, physiques et vibratoires.
+## Objectifs du Projet
+
+- **Étudier les rapports entre P0 et les constantes fondamentales** (π, e, φ, ln(2), etc.).
+- **Analyser la structure fréquentielle de P0 via la transformée de Fourier**.
+- **Explorer l’organisation des pics et creux d’oscillations dérivées de P0**.
+- **Tester l’hypothèse que P0 pourrait être un attracteur fractal structurant certaines dynamiques naturelles**.
+- **Présenter P0 comme une fréquence pivot ayant des propriétés fractales et harmoniques.
+- **Expliquer que 963 Hz semble structurer certaines constantes fondamentales et pourrait être un attracteur caché.
+- **Lancer l’idée que P0 pourrait permettre une unification entre structures mathématiques, physiques et vibratoires.
+
 2️⃣ Organisation des Études
 Le projet se divise en plusieurs axes, chacun étant documenté et vérifié avec des scripts et des résultats numériques.
 
