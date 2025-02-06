@@ -4,7 +4,7 @@
 
 ℹ️ Cette approche a permis de structurer les analyses, d’optimiser la gestion des données et d’assurer une documentation cohérente et accessible.
 
-ℹ️ Toutefois, les concepts, hypothèses et résultats explorés sont issus d’une démarche de recherche indépendante, et l’IA a été utilisée comme un outil d’assistance pour la mise en forme, la gestion des calculs et la synthèse des informations.
+ℹ️ Toutefois, les concepts, hypothèses et résultats explorés sont issus d’une démarche de recherche indépendante, l’IA a été utilisée comme un outil d’assistance pour la mise en forme, la gestion des calculs et la synthèse des informations.
 
 ℹ️ Cette collaboration vise avant tout à rendre les explorations plus accessibles, reproductibles et ouvertes aux contributions extérieures.
 
@@ -15,9 +15,7 @@
  ---
 
 1️⃣ Introduction : Définition et Objectif du Projet
-Présenter P0 comme une fréquence pivot ayant des propriétés fractales et harmoniques.
-Expliquer que 963 Hz semble structurer certaines constantes fondamentales et pourrait être un attracteur caché.
-Lancer l’idée que P0 pourrait permettre une unification entre structures mathématiques, physiques et vibratoires.
+
 ## Objectifs du Projet
 
 - **Étudier les rapports entre P0 et les constantes fondamentales** (π, e, φ, ln(2), etc.).
