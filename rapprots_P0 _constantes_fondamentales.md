@@ -65,26 +65,80 @@ Les fichiers produits sont :
 - **CSV** : Contenant les valeurs calculées.
 - **PNG** : Graphiques montrant les tendances des rapports.
 
-Chaque script enregistre les résultats dans :
-
-    C:\[...]
-
----
-
 ## 4. Détails des scripts
 
 ### 4.1 Script d'analyse des constantes mathématiques
-
-- **Fichier :** `script_constantes_math.py`
-- **Sorties :** 
-  - `rapports_P0_constantes_math.csv`
-  - `graphique_P0_constantes_math.png`
+ 
 - **Constantes étudiées :** 
   - pi, e, phi, racine(2), racine(3), gamma, Feigenbaum (delta, alpha), zeta(3), Catalan, Khinchin.
+    
 - **Calcul appliqué :**
   
       R_C = sin(2 * pi * 963) / C_math
 
+ **Script type :**
+
+ ---
+
+ import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+# Définition du dossier de sortie
+default_output_folder = "output"
+os.makedirs(default_output_folder, exist_ok=True)
+
+# Définition des constantes mathématiques fondamentales
+constantes_math = {
+    "pi": np.pi,
+    "e": np.e,
+    "phi": (1 + np.sqrt(5)) / 2,
+    "sqrt_2": np.sqrt(2),
+    "sqrt_3": np.sqrt(3),
+    "gamma": 0.5772156649,  # Constante d'Euler-Mascheroni
+    "delta_Feigenbaum": 4.6692016091,
+    "alpha_Feigenbaum": 2.5029078750,
+    "zeta_3": 1.2020569031,  # Constante d'Apéry
+    "G_Catalan": 0.9159655941,
+    "K_Khinchin": 2.6854520010,
+}
+
+# Définition de P0
+P0 = np.sin(2 * np.pi * 963)
+
+# Calcul des rapports P0 / constantes
+resultats_math = {nom: P0 / valeur for nom, valeur in constantes_math.items()}
+
+# Conversion en DataFrame pour analyse
+df_math = pd.DataFrame.from_dict(resultats_math, orient='index', columns=['Rapport P0 / Constante'])
+df_math.sort_values(by="Rapport P0 / Constante", inplace=True)
+
+# Sauvegarde des résultats en CSV
+csv_path = os.path.join(default_output_folder, "rapports_P0_constantes_math.csv")
+df_math.to_csv(csv_path)
+print(f"Résultats sauvegardés dans : {csv_path}")
+
+# Génération du graphique en barres
+fig, ax = plt.subplots(figsize=(10, 6))
+df_math.plot(kind="bar", legend=False, ax=ax, color="blue", alpha=0.7)
+
+# Mise en forme
+ax.set_ylabel("Rapport P0 / Constante")
+ax.set_title("Rapport P0 / Constantes Mathématiques")
+ax.set_xticklabels(df_math.index, rotation=45, ha="right", fontsize=10)
+ax.grid(axis="y", linestyle="--", alpha=0.7)
+
+# Sauvegarde du graphique
+graph_path = os.path.join(default_output_folder, "graphique_P0_constantes_math.png")
+plt.savefig(graph_path, bbox_inches="tight")
+print(f"Graphique sauvegardé dans : {graph_path}")
+
+# Affichage du graphique
+plt.show()
+
+ ---
+ 
 - **Graphique :**
 ![graphique_P0_constantes_math](https://github.com/user-attachments/assets/6484be5d-708e-44ef-876f-92ff31707747)
 
@@ -107,15 +161,76 @@ delta_Feigenbaum,-1.1290784577602302e-13
 
 ### 4.2 Script d'analyse des constantes physiques
 
-- **Fichier :** `script_constantes_physiques.py`
-- **Sorties :** 
-  - `rapports_P0_constantes_physiques.csv`
-  - `graphique_P0_constantes_physiques.png`
 - **Constantes étudiées :** 
   - Planck (h, hbar), vitesse de la lumière, gravité, charge élémentaire, permittivité, masse de l’électron, masse du proton.
 - **Calcul appliqué :**
   
       R_C = sin(2 * pi * 963) / C_physique
+
+ **Script type :**
+
+ ---
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+# Définition du dossier de sortie
+default_output_folder = "output"
+os.makedirs(default_output_folder, exist_ok=True)
+
+# Définition des constantes physiques fondamentales
+constantes_physiques = {
+    "h_Planck": 6.62607015e-34,
+    "hbar": 1.054571817e-34,
+    "c_vitesse_lumiere": 299792458,
+    "G_gravitationnelle": 6.67430e-11,
+    "e_charge_elementaire": 1.602176634e-19,
+    "epsilon_0": 8.854187817e-12,
+    "mu_0": 4 * np.pi * 1e-7,
+    "alpha_structure_fine": 1/137.0359991,
+    "m_electron": 9.10938356e-31,
+    "m_proton": 1.67262192369e-27,
+    "rapport_mp_me": 1836.152673,
+    "N_Avogadro": 6.02214076e23,
+    "R_gaz": 8.314462618,
+}
+
+# Définition de P0
+P0 = np.sin(2 * np.pi * 963)
+
+# Calcul des rapports P0 / constantes
+resultats_physiques = {nom: P0 / valeur for nom, valeur in constantes_physiques.items()}
+
+# Conversion en DataFrame pour analyse
+df_physiques = pd.DataFrame.from_dict(resultats_physiques, orient='index', columns=['Rapport P0 / Constante'])
+df_physiques.sort_values(by="Rapport P0 / Constante", inplace=True)
+
+# Sauvegarde des résultats en CSV
+csv_path = os.path.join(default_output_folder, "rapports_P0_constantes_physiques.csv")
+df_physiques.to_csv(csv_path)
+print(f"Résultats sauvegardés dans : {csv_path}")
+
+# Génération du graphique en barres
+fig, ax = plt.subplots(figsize=(10, 6))
+df_physiques.plot(kind="bar", legend=False, ax=ax, color="red", alpha=0.7)
+
+# Mise en forme
+ax.set_ylabel("Rapport P0 / Constante")
+ax.set_title("Rapport P0 / Constantes Physiques")
+ax.set_xticklabels(df_physiques.index, rotation=45, ha="right", fontsize=10)
+ax.grid(axis="y", linestyle="--", alpha=0.7)
+
+# Sauvegarde du graphique
+graph_path = os.path.join(default_output_folder, "graphique_P0_constantes_physiques.png")
+plt.savefig(graph_path, bbox_inches="tight")
+print(f"Graphique sauvegardé dans : {graph_path}")
+
+# Affichage du graphique
+plt.show()
+
+ ---
 
 - **Graphique :** 
 
@@ -142,15 +257,68 @@ N_Avogadro,-8.754187525457663e-37
 
 ### 4.3 Script d'analyse des constantes fréquentielles
 
-- **Fichier :** `script_constantes_frequences.py`
-- **Sorties :** 
-  - `rapports_P0_constantes_frequences.csv`
-  - `graphique_P0_constantes_frequences.png`
 - **Constantes étudiées :** 
   - Fréquence de l’hydrogène, résonance de Schumann, vibration de l’ADN, fréquence cyclotron.
 - **Calcul appliqué :**
   
       R_C = sin(2 * pi * 963) / C_frequence
+
+   **Script type :**
+
+ ---
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+
+# Définition du dossier de sortie
+default_output_folder = "output"
+os.makedirs(default_output_folder, exist_ok=True)
+
+# Définition des constantes fréquentielles
+constantes_frequences = {
+    "f_Hydrogene": 1.42040575177e9,  # Fréquence de transition de l'hydrogène
+    "f_Debye": 3e13,  # Fréquence typique des solides (~THz)
+    "f_cyclotron": 1.5e6,  # Fréquence cyclotron (~MHz)
+    "f_Schumann": 7.83,  # Résonance de la Terre (~Hz)
+    "f_ADN": 1e12  # Fréquence typique des vibrations de l’ADN (~THz)
+}
+
+# Définition de P0
+P0 = np.sin(2 * np.pi * 963)
+
+# Calcul des rapports P0 / constantes
+resultats_frequences = {nom: P0 / valeur for nom, valeur in constantes_frequences.items()}
+
+# Conversion en DataFrame pour analyse
+df_frequences = pd.DataFrame.from_dict(resultats_frequences, orient='index', columns=['Rapport P0 / Constante'])
+df_frequences.sort_values(by="Rapport P0 / Constante", inplace=True)
+
+# Sauvegarde des résultats en CSV
+csv_path = os.path.join(default_output_folder, "rapports_P0_constantes_frequences.csv")
+df_frequences.to_csv(csv_path)
+print(f"Résultats sauvegardés dans : {csv_path}")
+
+# Génération du graphique en barres
+fig, ax = plt.subplots(figsize=(10, 6))
+df_frequences.plot(kind="bar", legend=False, ax=ax, color="green", alpha=0.7)
+
+# Mise en forme
+ax.set_ylabel("Rapport P0 / Constante")
+ax.set_title("Rapport P0 / Constantes Fréquentielles")
+ax.set_xticklabels(df_frequences.index, rotation=45, ha="right", fontsize=10)
+ax.grid(axis="y", linestyle="--", alpha=0.7)
+
+# Sauvegarde du graphique
+graph_path = os.path.join(default_output_folder, "graphique_P0_constantes_frequences.png")
+plt.savefig(graph_path, bbox_inches="tight")
+print(f"Graphique sauvegardé dans : {graph_path}")
+
+# Affichage du graphique
+plt.show()
+
+ ---
 
 - **Graphique :** Barres vertes avec légendes hors du graphique.
 
