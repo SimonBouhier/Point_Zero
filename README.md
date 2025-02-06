@@ -74,19 +74,24 @@ readme_explo_963.txt (Exploration du comportement de P0)
 readme_graph.txt (Analyse des pics et creux)
 annexe_théorique.txt (Hypothèse fractale et liens avec la gravitation)
 p0.txt (Définition et structure de P0)
+
 4️⃣ Résultats Clés
+
 P0 ≈ -5.2719 × 10⁻¹³, une valeur extrêmement proche de zéro.
 Les multiples et sous-multiples de 963 Hz suivent un schéma structuré, suggérant un alignement harmonique naturel.
 Certains rapports avec pi, e, phi et ln(2) révèlent une organisation sous-jacente, peut-être logarithmique.
 Les analyses spectrales montrent un spectre pur autour de 963 Hz, sans distorsions apparentes.
 La transition autour de 963 semble révéler un nombre encore inconnu (M0), à explorer plus en détail.
+
 5️⃣ Hypothèses et Prochaines Étapes
+
 📌 P0 pourrait être un attracteur mathématique structurant certaines constantes fondamentales.
 📌 Une structure logarithmique sous-jacente pourrait relier 963 Hz aux bases fractales et aux constantes universelles.
 📌 L’organisation des pics et creux suit une auto-similarité qui mérite une exploration plus fine.
 📌 L’étude du comportement fréquentiel de P0 dans différents systèmes pourrait révéler des propriétés insoupçonnées.
 
 6️⃣ Contribution et Perspectives
+
 🔹 Ce projet est en cours d’exploration, et toute contribution est la bienvenue.
 🔹 Les prochaines étapes incluent l’analyse plus fine de M0, la simulation d’interactions vibratoires et la validation expérimentale des observations.
 🔹 Le code est open-source, et toute suggestion d’amélioration des modèles ou des scripts est encouragée.
