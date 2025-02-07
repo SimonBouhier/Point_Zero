@@ -23,7 +23,7 @@
 - **Explorer l’organisation des pics et creux d’oscillations dérivées de P0**.
 - **Tester l’hypothèse que P0 pourrait être un attracteur fractal structurant certaines dynamiques naturelles**.
 - Présenter P0 comme une fréquence pivot ayant des propriétés fractales et harmoniques.
-- Expliquer que 963 Hz semble structurer certaines constantes fondamentales et pourrait être un attracteur caché.
+- Expliquer que P0 semble structurer certaines constantes fondamentales et pourrait être un attracteur caché.
 - Lancer l’idée que P0 pourrait permettre une unification entre structures mathématiques, physiques et vibratoires.
 
 2️⃣ Organisation des Études
