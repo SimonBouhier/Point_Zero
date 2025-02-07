@@ -27,6 +27,9 @@ Cette étude vise à explorer les relations entre la constante P0 et les constan
 
 ## Résultats
 
+![analyse_log_log_rapports_planck](https://github.com/user-attachments/assets/be48f643-2eff-4ae1-a33b-28e87ab8c556)
+
+
 - **Rapport Observé** : L'analyse log-log révèle une structure linéaire bien définie.
 - **Équation de Régression** :
   \[ \log_{10}(y) = -1.000000 \cdot \log_{10}(x) + -3.502416 \]
