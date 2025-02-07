@@ -44,7 +44,7 @@ En comparant P0 à la vitesse de la lumière \( c \), nous obtenons :
 
 \[ \frac{P0}{c} \approx 1.0489714651535839 \times 10^{-12} \]
 
-Ce rapport pourrait suggérer une relation encore à déterminer avec des constantes physiques fondamentales.
+Ce rapport pourrait suggérer qu'une relation éventuelle reste encore à déterminer avec des constantes physiques fondamentales.
 
 ## 6. Prochaines étapes et Validation
 Pour valider ces résultats, plusieurs étapes sont envisagées :
