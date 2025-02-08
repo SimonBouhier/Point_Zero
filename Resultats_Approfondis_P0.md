@@ -65,10 +65,5 @@ Ces résultats montrent que **certaines constantes apparaissent très rarement d
 
 ---
 
-## 5. Prochaines Étapes
-1️⃣ **Explorer si d'autres combinaisons de constantes peuvent affiner encore l'approximation.**  
-2️⃣ **Tester P0 dans d’autres bases logarithmiques et systèmes numériques.**  
-3️⃣ **Comparer ces résultats à d’autres structures fractales et modèles de stabilité.**  
-
-🚀 Ces résultats montrent que P0 pourrait être un **pivot mathématique** reliant plusieurs constantes fondamentales, et son rôle doit être approfondi par de nouvelles simulations et modèles théoriques.
+ Ces résultats montrent que P0 pourrait être un **pivot mathématique** reliant plusieurs constantes fondamentales, et son rôle doit être approfondi par de nouvelles simulations et modèles théoriques.
 
