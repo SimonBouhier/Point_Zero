@@ -66,10 +66,15 @@ P0 présente des propriétés mathématiques et physiques intrigantes, reliant d
 L'objectif de ces tests était de **vérifier la robustesse des relations observées entre P0, ln2 et les constantes fondamentales** en appliquant différentes techniques de validation croisée.
 
 Les tests effectués :
+
 1️⃣ **Vérification sans transformation logarithmique** pour s'assurer que les relations sont intrinsèques et non un artefact du log.
+
 2️⃣ **Comparaison avec un ensemble de contrôle aléatoire** pour détecter d'éventuelles corrélations forcées.
+
 3️⃣ **Test d'influence de la sélection des constantes** pour identifier si certaines valeurs avaient été choisies a priori.
+
 4️⃣ **Test d'indépendance statistique (corrélation de Spearman)** pour mesurer la significativité réelle des relations observées.
+
 
 ---
 
