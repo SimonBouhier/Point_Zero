@@ -5,37 +5,21 @@ Ce document présente l'analyse des résultats obtenus à partir d'un script vis
 
 1.1 Table des Resultats
 
-Methode
+Methode | Resultat
 
-Resultat
+Logarithmique | -8.0646
 
-Logarithmique
+Exponentielle | 1.0003145
 
--8.0646
+Fraction continue | 297/944435
 
-Exponentielle
+Transformation harmonique | 3179.9158
 
-1.0003145
+Approximation Fibonacci | 5801016481589169 / 18446744073709551616
 
-Fraction continue
+Approximation Farey | 25 * 2^(49/55) * 3^(1/5) * 5^(13/55) * 7^(54/55) / 1815156
 
-297/944435
-
-Transformation harmonique
-
-3179.9158
-
-Approximation Fibonacci
-
-5801016481589169 / 18446744073709551616
-
-Approximation Farey
-
-25 * 2^(49/55) * 3^(1/5) * 5^(13/55) * 7^(54/55) / 1815156
-
-Optimisation structurelle
-
--1.941417 * phi + 1.000000 * pi
+Optimisation structurelle | -1.941417 * phi + 1.000000 * pi
 
 2. Interpretation des Resultats
 
