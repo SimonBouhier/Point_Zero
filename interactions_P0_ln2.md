@@ -14,7 +14,10 @@ L’objectif de cette analyse est d’explorer les structures cachées entre **P
 
 ### **2.1 Analyse Log-Linéaire**
 
-📌 **Graphique :** `exploration_log_P0_ln2.png`
+📌 **Graphique :** 
+
+![exploration_log_P0_ln2](https://github.com/user-attachments/assets/0dd7f914-4265-4f0a-a66a-73063c783f94)
+
 
 Le tracé log-linéaire de \( P0 / ln2^k \) en fonction de \( k \) montre une **tendance linéaire stricte**, ce qui suggère une possible régularité sous-jacente. Cette observation pourrait indiquer que **P0 est relié à ln2 par une échelle logarithmique simple et stable.**
 
@@ -24,7 +27,10 @@ Le tracé log-linéaire de \( P0 / ln2^k \) en fonction de \( k \) montre une **
 
 ### **2.2 Analyse Fréquentielle (Transformée de Fourier)**
 
-📌 **Graphique :** `spectre_fourier_P0_ln2.png`
+📌 **Graphique :** 
+
+![spectre_fourier_P0_ln2](https://github.com/user-attachments/assets/9a037a20-9a7a-4305-abab-99029aca9dbd)
+
 
 L’analyse fréquentielle montre une **forte dominance à basse fréquence**, ce qui indique que **les interactions entre P0 et ln2 suivent une structure lisse, avec peu d’oscillations complexes**.
 
